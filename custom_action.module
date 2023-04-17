@@ -3,7 +3,7 @@
 /**
  * Implements hook_mail().
  */
-function custom_actions_mail($key, &$message, $params): void {
+function custom_action_mail($key, &$message, $params): void {
   if ($key === 'admin_mail') {
     $message['headers']['Content-Type'] = $params['headers']['Content-Type'];
     $message['headers']['Content-Transfer-Encoding'] = $params['headers']['Content-Transfer-Encoding'];
