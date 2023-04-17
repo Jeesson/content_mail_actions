@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_mail().
+ */
+function custom_actions_mail($key, &$message, $params): void {
+  if ($key === 'admin_mail') {
+    $message['headers']['Content-Type'] = $params['headers']['Content-Type'];
+    $message['headers']['Content-Transfer-Encoding'] = $params['headers']['Content-Transfer-Encoding'];
+
+    $message['from'] = \Drupal::config('system.site')->get('mail');
+    $message['subject'] = t('Notification from my site');
+    $message['body'][] = t("Dear me.<br/>Content has been updated on your site and you got to know it:)");
+  }
+}

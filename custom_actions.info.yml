@@ -1,0 +1,5 @@
+name: Custom actions
+type: module
+description: Provides some custom actions.
+core_version_requirement: ^9 || ^10
+package: Custom
