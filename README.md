@@ -1,8 +1,8 @@
 # Полезные ссылки!
 
-[Drupal / Core / Mail / MailManagerInterface](https://api.drupal.org/api/drupal/core!lib!Drupal!Core!Mail!MailManagerInterface.php/function/MailManagerInterface::mail/8.9.x)
-[Drupal 8: Derivatives — множественные экземпляры плагина](https://niklan.net/blog/203#izmeneniya-v-plagine)
-[Custom actions in Drupal 8/9](https://www.alansaunders.co.uk/blog/custom-actions-drupal-89#%5Bmodule-name%5D.info.yml)
+-   [Drupal / Core / Mail / MailManagerInterface](https://api.drupal.org/api/drupal/core!lib!Drupal!Core!Mail!MailManagerInterface.php/function/MailManagerInterface::mail/8.9.x)
+-   [Drupal 8: Derivatives — множественные экземпляры плагина](https://niklan.net/blog/203#izmeneniya-v-plagine)
+-   [Custom actions in Drupal 8/9](https://www.alansaunders.co.uk/blog/custom-actions-drupal-89#%5Bmodule-name%5D.info.yml)
 
 # Files
 
