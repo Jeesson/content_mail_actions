@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_mail_actions
+id: node_save_and_send_mail_action
+label: 'DO SOMETHING!!!'
+type: node
+plugin: entity:save_and_send_mail_action:node
+configuration: {  }
