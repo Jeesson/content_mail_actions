@@ -1,0 +1,5 @@
+name: Content Mail
+description: Provide new actions
+type: module
+package: Custom
+core_version_requirement: ^9

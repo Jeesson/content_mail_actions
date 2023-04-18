@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\custom_actions\Plugin\Action;
+namespace Drupal\content_mail_actions\Plugin\Action;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Component\Datetime\TimeInterface;
@@ -13,12 +13,12 @@ use Drupal\Core\Session\AccountInterface;
  * Provides an action that can save any entity and send mail notification.
  *
  * @Action(
- *   id = "entity:save_and_send_mail_custom_action",
+ *   id = "entity:save_and_send_mail_action",
  *   action_label = @Translation("Save and send mail"),
  *   deriver = "Drupal\Core\Action\Plugin\Action\Derivative\EntityChangedActionDeriver",
  * )
  */
-class SaveAndSendMailCustomAction extends EntityActionBase {
+class SaveAndSendMailAction extends EntityActionBase {
 
   /**
    * The time service.
@@ -82,14 +82,14 @@ class SaveAndSendMailCustomAction extends EntityActionBase {
     ];
 
     $had_sent = $this->mailManager->mail(
-      'custom_actions',
-      'admin_mail',
+      'content_mail_actions',
+      'content_mail_mail',
       'someuser@test.com',
       'en',
       $params
     );
 
-    $logger = \Drupal::logger('custom_actions');
+    $logger = \Drupal::logger('content_mail_actions');
     if (!$had_sent['result']) {
       $logger->warning('Errors has been occurred during mail sending.');
     }
